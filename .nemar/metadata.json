@@ -2,47 +2,14 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Free Recall of Word Lists with Repeated Items",
+  "description": "This dataset comprises behavioral and intracranial electrophysiological recordings from a repeated-item free recall task conducted across multiple clinical sites. Participants studied lists of 12 unique words (with varying repetition frequencies: 3 presented once, 3 twice, and 6 three times) presented visually, followed by a 7-second delay and free recall phase. The dataset investigates how item repetition affects memory encoding and retrieval processes through direct brain recordings.",
+  "methods_description": "Intracranial EEG recordings were collected during a free recall task where participants studied word lists presented visually (750 ms or 1600 ms per word) followed by a 7-second delay and free recall phase. Recordings were acquired using Blackrock and Medtronic systems with monopolar (referenced) and bipolar electrode configurations. Individual electrode montages with MNI and Talairach coordinates are provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
     "Haydn G. Herrema": {},
     "Michael J. Kahana": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005411.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005411",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005411",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "beh",
-    "ieeg"
-  ],
-  "resource_type_specific": "Neuroimaging Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".edf",
-    ".json",
-    ".md",
-    ".tsv",
-    ".txt"
-  ],
-  "description": "This dataset comprises behavioral and intracranial electrophysiological recordings from a repeated-item free recall task conducted across multiple clinical sites. Participants studied lists of 12 unique words (with varying repetition frequencies: 3 presented once, 3 twice, and 6 three times) presented visually during encoding, followed by a 7-second delay and free recall phase. The dataset investigates how item repetition affects memory encoding and retrieval processes through direct neural recordings.",
-  "methods_description": "Intracranial EEG recordings were collected during a free recall task where participants studied word lists presented visually (750 ms or 1600 ms per word) followed by a 7-second delay and free recall phase. Recordings were acquired using Blackrock (250 nV units) and Medtronic (0.1 µV units) systems with both monopolar (referenced, typically mastoid) and bipolar electrode configurations. Electrode locations are provided with MNI and Talairach coordinates when available.",
   "keywords": [
     {
       "term": "intracranial EEG"
@@ -54,11 +21,48 @@
       "term": "memory encoding"
     },
     {
+      "term": "word lists"
+    },
+    {
       "term": "item repetition"
     },
     {
       "term": "electrophysiology"
     }
   ],
-  "source_hash": "e7386eb4ae466841a38094927cf617f8d4e288a98bd696f5d6881e19e156196a"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005411",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005411",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005411.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "ieeg"
+  ],
+  "sizes": [
+    "168.9 GB (196 files)"
+  ],
+  "formats": [
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".yml"
+  ],
+  "source_hash": "5164ed118077f76b080d0c40de31bf4f4a6223246254cdd5f1b4e07438215d34"
 }
