@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Free Recall of Word Lists with Repeated Items",
-  "description": "This dataset comprises behavioral and intracranial electrophysiological recordings from a repeated-item free recall task conducted across multiple clinical sites. Participants studied lists of 12 unique words (with varying repetition frequencies: 3 presented once, 3 twice, and 6 three times) presented visually, followed by a 7-second delay and free recall phase. The dataset investigates how item repetition affects memory encoding and retrieval processes through direct brain recordings.",
-  "methods_description": "Intracranial EEG recordings were collected during a free recall task where participants studied word lists presented visually (750 ms or 1600 ms per word) followed by a 7-second delay and free recall phase. Recordings were acquired using Blackrock and Medtronic systems with monopolar (referenced) and bipolar electrode configurations. Individual electrode montages with MNI and Talairach coordinates are provided.",
+  "description": "This dataset contains behavioral events and intracranial electrophysiological recordings from a free recall task with repeated word items, collected across multiple clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania. Participants studied lists of words presented visually, with items repeated at varying frequencies, and then freely recalled the words after a delay period. The dataset supports investigation of memory encoding and retrieval processes as a function of item repetition.",
+  "methods_description": "Participants viewed lists of 27 words (drawn from 12 unique items repeated 1, 2, or 3 times) presented visually one at a time, followed by a 7-second delay and then a free recall period. Intracranial EEG recordings were collected using monopolar and bipolar referencing schemes, with electrode locations documented via MNI and Talairach coordinates. Data were recorded using Blackrock (250 nV units) and Medtronic (0.1 uV units) systems, scaled to volts.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,22 +12,26 @@
   },
   "keywords": [
     {
-      "term": "intracranial EEG"
+      "term": "iEEG"
     },
     {
       "term": "free recall"
     },
     {
-      "term": "memory encoding"
+      "term": "Memory",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
     },
     {
-      "term": "word lists"
+      "term": "intracranial electrodes"
     },
     {
-      "term": "item repetition"
+      "term": "word list learning"
     },
     {
-      "term": "electrophysiology"
+      "term": "Electrocorticography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     }
   ],
   "related_identifiers": [
@@ -37,14 +41,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005411",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds005411.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005411",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
