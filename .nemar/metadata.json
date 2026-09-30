@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Free Recall of Word Lists with Repeated Items",
-  "description": "This dataset contains behavioral events and intracranial electrophysiological recordings from a free recall task with repeated word items, collected across multiple clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania. Participants studied lists of words presented visually, with items repeated at varying frequencies, and then freely recalled the words after a delay period. The dataset supports investigation of memory encoding and retrieval processes as a function of item repetition.",
-  "methods_description": "Participants viewed lists of 27 words (drawn from 12 unique items repeated 1, 2, or 3 times) presented visually one at a time, followed by a 7-second delay and then a free recall period. Intracranial EEG recordings were collected using monopolar and bipolar referencing schemes, with electrode locations documented via MNI and Talairach coordinates. Data were recorded using Blackrock (250 nV units) and Medtronic (0.1 uV units) systems, scaled to volts.",
+  "description": "This dataset contains behavioral events and intracranial electrophysiological (iEEG) recordings from a repeated-item free recall task. Participants studied visually presented word lists, each containing 27 encoding events drawn from 12 unique words repeated one, two, or three times. After a 7-second delay they freely recalled the words in any order. Data were collected at clinical sites in collaboration with the Computational Memory Lab at the University of Pennsylvania.",
+  "methods_description": "Participants viewed word lists one word at a time, followed by a 7-second delay and a free recall phase. Word presentation duration varied across sessions (750 ms to 1600 ms). iEEG was recorded with Blackrock and Medtronic systems and provided in both monopolar and bipolar referencing, with per-subject electrode montages and MNI/Talairach coordinates when available.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -12,10 +12,19 @@
   },
   "keywords": [
     {
-      "term": "iEEG"
+      "term": "intracranial EEG"
     },
     {
       "term": "free recall"
+    },
+    {
+      "term": "episodic memory"
+    },
+    {
+      "term": "item repetition"
+    },
+    {
+      "term": "word list learning"
     },
     {
       "term": "Memory",
@@ -23,15 +32,9 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D008568"
     },
     {
-      "term": "intracranial electrodes"
-    },
-    {
-      "term": "word list learning"
-    },
-    {
-      "term": "Electrocorticography",
+      "term": "Mental Recall",
       "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
+      "value_uri": "http://id.nlm.nih.gov/mesh/D011939"
     }
   ],
   "related_identifiers": [
@@ -58,7 +61,7 @@
     "ieeg"
   ],
   "sizes": [
-    "168.9 GB (196 files)"
+    "157 GB (196 files)"
   ],
   "formats": [
     ".edf",
